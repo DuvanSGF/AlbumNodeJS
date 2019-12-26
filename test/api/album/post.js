@@ -21,7 +21,7 @@ describe('POST /album', () => {
 
   it('Ok, Creando una nueva entrada', (done) => {
     request(app).post('/album')
-    .send({ name: 'playa uno', artist:"pedro capo"})
+    .send({ name: 'Otro trago', artist:"Sech"})
     .then((res) => {
       const body = res.body;
       expect(body).to.contain.property('_id');
